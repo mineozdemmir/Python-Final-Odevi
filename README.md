@@ -35,6 +35,7 @@ QgsProject.instance().addMapLayer(vector_layer)
 ![image](https://github.com/mineozdemmir/Python-Final-Odevi/assets/146944312/95e69ab0-7b4d-42de-88a1-2f187c6d81e3)
 
 En son olarak katman olarak açılan birleştirilmiş dosya seçenekler-semboloji yardımı ile sınıflara ayrılmış ve renkler nüfus aralıklarına göre yeniden düzenlenmiştir.
-![image](https://github.com/mineozdemmir/Python-Final-devi/assets/146944312/59450f64-cb4e-44cb-a304-d8f2b18ee7f3)
+![image](https://github.com/mineozdemmir/Python-Final-Odevi/assets/146944312/6d707035-93e3-489b-aa6e-1b8adf8639d9)
+
 
 
