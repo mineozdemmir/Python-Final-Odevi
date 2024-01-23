@@ -23,7 +23,7 @@ print(merged_data.head())
 
 output_path = r"C:\Users\User\Desktop\mineozdemmir\final\merged_data.shp"
 merged_data.to_pickle(output_path)
-![image](https://github.com/mineozdemmir/Python-Final-Odevi/assets/146944312/c454cfa9-348d-4d0b-8580-03d3513e201c)
+![image](https://github.com/mineozdemmir/Python-Final-Odevi/assets/146944312/45f64da3-bbb6-45ab-a874-69ac404fbe0e)
 
 Birleştilen kod QGis programı içerisinde Python eklentisi kullanılarak katman olarak açılmıştır.
 from qgis.core import QgsVectorLayer
