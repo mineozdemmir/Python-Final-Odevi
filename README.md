@@ -17,13 +17,14 @@ print("df columns:", df.columns)
 print("gdf columns:", gdf.columns)
 
 Tanımlanan kodlar birleştirilmiştir ve kaydedilmiştir.
-merged_data = pd.merge(df, gdf, left_on='turkey81_n', right_on='turkey81_n')
+merged_data = pd.merge(df, gdf, left_on='nufus', right_on='turkey81_n')
 
 print(merged_data.head())
 
 output_path = r"C:\Users\User\Desktop\mineozdemmir\final\merged_data.shp"
 merged_data.to_pickle(output_path)
-![image](https://github.com/mineozdemmir/Python-Final-Odevi/assets/146944312/45f64da3-bbb6-45ab-a874-69ac404fbe0e)
+![image](https://github.com/mineozdemmir/Python-Final-Odevi/assets/146944312/9bd7dfeb-c581-42a9-a07a-fe9417f7c964)
+
 
 Birleştilen kod QGis programı içerisinde Python eklentisi kullanılarak katman olarak açılmıştır.
 from qgis.core import QgsVectorLayer
