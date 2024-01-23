@@ -5,25 +5,23 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 Mekansal analiz olarak Türkiye'nin illere göre nüfus dağılımı haritası oluşturulmuştur. Bu doğrultuda hem il sınırlarının yer aldığı .shp uzantılı dosyaya hem de nüfus verilerinin yer aldığı .csv uzantılı dosya ham veriler üzerinden yeniden düzenlenmiştir. Her iki dosyada da turkey81_n sütunu ortaktır. Sonrasında ise shape ve data olarak kod tanımlanmıştır. 
-data_path = r"C:\Users\User\Desktop\mineozdemmir\final\turkey41.csv"
+data_path = r"C:\Users\User\Desktop\mineozdemmir\final\turkey81.csv"
 shape_path = r"C:\Users\User\Desktop\mineozdemmir\final\turkey81.shp"
 
 df = pd.read_csv(data_path)
 print(df)
-print(df.columns)
-print(df.info())
+gdf = gpd.read_file(shape_path)
+print(gdf) 
 
-shape = gpd.read_file(shape_path)
-print(shape)
-print(shape.columns)
+print("df columns:", df.columns)
+print("gdf columns:", gdf.columns)
 
 Tanımlanan kodlar birleştirilmiştir ve kaydedilmiştir.
-merged_data = shape.merge(df, left_on='turkey81_n', right_on='turkey81_n')
+merged_data = pd.merge(df, gdf, left_on='turkey81_n', right_on='turkey81_n')
 
-print(merged_data.info())
-print(merged_data)
+print(merged_data.head())
 
-merged_data.to_file(r"C:\Users\User\Desktop\mineozdemmir\final\merged_data.shp", driver="ESRI Shapefile")
+merged_data.to_file(r"C:\Users\User\Desktop\mineozdemmir\final\merged_data.shp")
 
 Birleştilen kod QGis programı içerisinde Python eklentisi kullanılarak katman olarak açılmıştır.
 from qgis.core import QgsVectorLayer
