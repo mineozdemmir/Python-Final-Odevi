@@ -34,8 +34,8 @@ QgsProject.instance().addMapLayer(vector_layer)
 <QgsVectorLayer: 'My Vector Layer' (ogr)>
 ![image](https://github.com/mineozdemmir/Python-Final-Odevi/assets/146944312/95e69ab0-7b4d-42de-88a1-2f187c6d81e3)
 
-En son olarak katman olarak açılan birleştirilmiş dosya seçenekler-semboloji yardımı ile sınıflara ayrılmış ve renkler nüfus aralıklarına göre yeniden düzenlenmiştir.
-![image](https://github.com/mineozdemmir/Python-Final-Odevi/assets/146944312/6d707035-93e3-489b-aa6e-1b8adf8639d9)
+En son olarak katman olarak açılan birleştirilmiş dosya seçenekler-semboloji yardımı ile turkey81_n sütunu içerisinde bulunan nüfus verilerine göre sınıflara ayrılmış ve renkler nüfusa göre yeniden düzenlenmiştir.
+![image](https://github.com/mineozdemmir/Python-Final-Odevi/assets/146944312/fdf90b91-5527-46cb-8825-6c99ef412109)
 
 
 
