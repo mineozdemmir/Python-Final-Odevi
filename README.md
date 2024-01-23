@@ -21,7 +21,8 @@ merged_data = pd.merge(df, gdf, left_on='turkey81_n', right_on='turkey81_n')
 
 print(merged_data.head())
 
-merged_data.to_file(r"C:\Users\User\Desktop\mineozdemmir\final\merged_data.shp")
+output_path = r"C:\Users\User\Desktop\mineozdemmir\final\merged_data.shp"
+merged_data.to_pickle(output_path)
 
 Birleştilen kod QGis programı içerisinde Python eklentisi kullanılarak katman olarak açılmıştır.
 from qgis.core import QgsVectorLayer
