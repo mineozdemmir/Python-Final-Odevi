@@ -30,7 +30,6 @@ Birleştilen kod QGis programı içerisinde Python eklentisi kullanılarak katma
 from qgis.core import QgsVectorLayer
 vector_file_path = r"C:\Users\User\Desktop\mineozdemmir\final\merged_data.shp"
 vector_layer = QgsVectorLayer(vector_file_path, "My Vector Layer", "ogr")
-
 QgsProject.instance().addMapLayer(vector_layer)
 ![image](https://github.com/mineozdemmir/Python-Final-Odevi/assets/146944312/95e69ab0-7b4d-42de-88a1-2f187c6d81e3)
 
