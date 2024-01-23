@@ -23,6 +23,7 @@ print(merged_data.head())
 
 output_path = r"C:\Users\User\Desktop\mineozdemmir\final\merged_data.shp"
 merged_data.to_pickle(output_path)
+![image](https://github.com/mineozdemmir/Python-Final-Odevi/assets/146944312/c454cfa9-348d-4d0b-8580-03d3513e201c)
 
 Birleştilen kod QGis programı içerisinde Python eklentisi kullanılarak katman olarak açılmıştır.
 from qgis.core import QgsVectorLayer
@@ -31,7 +32,9 @@ vector_layer = QgsVectorLayer(vector_file_path, "My Vector Layer", "ogr")
 
 QgsProject.instance().addMapLayer(vector_layer)
 <QgsVectorLayer: 'My Vector Layer' (ogr)>
+![image](https://github.com/mineozdemmir/Python-Final-Odevi/assets/146944312/95e69ab0-7b4d-42de-88a1-2f187c6d81e3)
 
 En son olarak katman olarak açılan birleştirilmiş dosya seçenekler-semboloji yardımı ile sınıflara ayrılmış ve renkler nüfus aralıklarına göre yeniden düzenlenmiştir.
 ![image](https://github.com/mineozdemmir/Python-Final-devi/assets/146944312/59450f64-cb4e-44cb-a304-d8f2b18ee7f3)
+
 
