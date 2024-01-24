@@ -4,7 +4,7 @@ import geopandas as gpd
 import pandas as pd
 import matplotlib.pyplot as plt
 
-Mekansal analiz olarak Türkiye'nin illere göre nüfus dağılımı haritası oluşturulmuştur. Bu doğrultuda hem il sınırlarının yer aldığı .shp uzantılı dosya hem de nüfus verilerinin yer aldığı .csv uzantılı dosya ham veriler üzerinden yeniden düzenlenmiştir. Her iki dosyada da turkey81_n ve nufus sütunları ortaktır. Sonrasında ise shape ve data olarak kod tanımlanmıştır. 
+Mekansal analiz olarak Türkiye'nin illere göre nüfus dağılımı haritası oluşturulmuştur. Bu doğrultuda hem il sınırlarının yer aldığı .shp uzantılı dosya hem de nüfus verilerinin yer aldığı .csv uzantılı dosya ham veriler üzerinden yeniden düzenlenmiştir. Sonrasında ise shape ve data olarak kod tanımlanmıştır. 
 data_path = r"C:\Users\User\Desktop\mineozdemmir\final\turkey81.csv"
 shape_path = r"C:\Users\User\Desktop\mineozdemmir\final\turkey81.shp"
 
@@ -16,7 +16,7 @@ print(gdf)
 print("df columns:", df.columns)
 print("gdf columns:", gdf.columns)
 
-Tanımlanan kodlar birleştirilmiştir ve kaydedilmiştir.
+Her iki dosyada da turkey81_n ve nufus sütunları ortaktır. Tanımlanan kodlar birleştirilmiştir ve kaydedilmiştir.
 merged_data = pd.merge(df, gdf, left_on='nufus', right_on='turkey81_n')
 
 print(merged_data.head())
